@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/navbar";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 export const metadata: Metadata = {
-  title: "David Santos - Frontend Developer",
+  title: "David Santos - Front-end Developer",
   description:
-    "Portfolio of David Santos, a frontend developer specializing in creating modern and responsive web applications.",
+    "Portfolio of David Santos, a front-end developer specializing in creating modern and responsive web applications.",
   openGraph: {
-    title: "David Santos - Frontend Developer",
+    title: "David Santos - Front-end Developer",
     description:
-      "Portfolio of David Santos, a frontend developer specializing in creating modern and responsive web applications.",
+      "Portfolio of David Santos, a front-end developer specializing in creating modern and responsive web applications.",
     siteName: "David Santos",
   },
 };
 
-const geist = Geist({
-  variable: "--font-geist",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -26,9 +28,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
-    <html lang="en">
-      <body className={`${geist.className} antialiased`}>{children}</body>
+    <html lang="pt-BR" className={raleway.variable}>
+      <body className={`${raleway.className} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar className="top-2" />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
