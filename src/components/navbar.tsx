@@ -19,47 +19,47 @@ export function Navbar({ className }: { className?: string }) {
                 return (
                     <nav className="bg-white dark:bg-neutral-900 backdrop-blur-sm rounded-sm p-4 flex items-center gap-6 justify-center shadow-sm">
                         <div className="flex items-center gap-4">
-                            <Button variant="ghost">
-                                <Link data-active={pathname === "/"} href="/" className="dark:text-orange-300 text-orange-400 data-[active=true]:font-bold">
+                            <Link data-active={pathname === "/"} href="/" className="dark:text-orange-300 text-orange-400 data-[active=true]:font-bold">
+                                <Button variant="ghost">
                                     david.santos
-                                </Link>
-                            </Button>
-                            <Button variant="ghost">
-                                <Link data-active={pathname === "/education"} href="/education" className="dark:text-orange-300 text-orange-400 data-[active=true]:font-bold">
+                                </Button>
+                            </Link>
+                            <Link data-active={pathname === "/education"} href="/education" className="dark:text-orange-300 text-orange-400 data-[active=true]:font-bold">
+                                <Button variant="ghost">
                                     education
-                                </Link>
-                            </Button>
-                            <Button variant="ghost">
-                                <Link data-active={pathname === "/experience"} href="/experience" className="dark:text-orange-300 text-orange-400 data-[active=true]:font-bold">
+                                </Button>
+                            </Link>
+                            <Link data-active={pathname === "/experience"} href="/experience" className="dark:text-orange-300 text-orange-400 data-[active=true]:font-bold">
+                                <Button variant="ghost">
                                     experience
-                                </Link>
-                            </Button>
+                                </Button>
+                            </Link>
                         </div>
                         <div className="flex items-center gap-1">
-                            <Button variant="ghost">
-                                <Link target="_blank" href="https://github.com/David-Santosx">
+                            <Link target="_blank" href="https://github.com/David-Santosx">
+                                <Button size={"icon"} variant="ghost">
                                     <GithubIcon className="w-5 h-5 text-orange-400 dark:text-orange-300" />
-                                </Link>
-                            </Button>
-                            <Button variant="ghost">
-                                <Link target="_blank" href="https://www.linkedin.com/in/david-willians-dos-santos-212932254/">
+                                </Button>
+                            </Link>
+                            <Link target="_blank" href="https://www.linkedin.com/in/david-willians-dos-santos-212932254/">
+                                <Button size={"icon"} variant="ghost">
                                     <LinkedinIcon className="w-5 h-5 text-orange-400 dark:text-orange-300" />
-                                </Link>
-                            </Button>
-                            <Button variant="ghost">
-                                <Link target="_blank" href="https://instagram.com/leao.willians">
+                                </Button>
+                            </Link>
+                            <Link target="_blank" href="https://instagram.com/leao.willians">
+                                <Button size={"icon"} variant="ghost">
                                     <InstagramIcon className="w-5 h-5 text-orange-400 dark:text-orange-300" />
-                                </Link>
-                            </Button>
-                            <Button variant="ghost">
-                                <Link target="_blank" href="https://www.youtube.com/@falando-de-codigo">
+                                </Button>
+                            </Link>
+                            <Link target="_blank" href="https://www.youtube.com/@falando-de-codigo">
+                                <Button size={"icon"} variant="ghost">
                                     <YoutubeIcon className="w-5 h-5 text-orange-400 dark:text-orange-300" />
-                                </Link>
-                            </Button>
+                                </Button>
+                            </Link>
                         </div>
                         <div className="flex items-center">
-                            <Button 
-                                variant="ghost" 
+                            <Button
+                                variant="ghost"
                                 size="icon"
                                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                                 className="border "
