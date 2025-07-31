@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export function HeroSection() {
@@ -11,7 +12,7 @@ export function HeroSection() {
         </p>
         <div className='flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6'>
           <Button className='rounded-sm w-full sm:w-auto'>Download CV</Button>
-          <Button variant={"ghost"} className='dark:text-orange-300 text-orange-400 w-full sm:w-auto'>See projects</Button>
+          <Link href="/projects"><Button variant={"ghost"} className='dark:text-orange-300 text-orange-400 w-full sm:w-auto'>See projects</Button></Link>
         </div>
       </div>
       <div className="w-[280px] md:w-[380px]">
