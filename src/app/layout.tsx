@@ -31,7 +31,7 @@ export default function RootLayout({
 
 
   return (
-    <html lang="pt-BR" className={raleway.variable}>
+    <html lang="en" className={raleway.variable} suppressHydrationWarning>
       <body className={`${raleway.className} antialiased`}>
         <ThemeProvider
           attribute="class"
