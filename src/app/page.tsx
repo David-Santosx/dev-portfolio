@@ -7,7 +7,6 @@ import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/ui/marquee";
 import { Badge } from "@/components/ui/badge";
-import { FlipText } from "@/components/ui/flip-text";
 import { Press_Start_2P } from "next/font/google";
 import { Separator } from "@/components/ui/separator";
 
@@ -214,7 +213,7 @@ export function TechsCarousel() {
 
   return (
     <div className="flex flex-col w-full mt-15 gap-8">
-      <div className="text-center">
+      <div className="text-center flex flex-col items-center">
         {/* <span className="dark:text-neutral-400 text-neutral-800 tracking-normal">
           3 years of
         </span> */}
@@ -225,9 +224,9 @@ export function TechsCarousel() {
         >
           3 years of XP
         </span>
-        <FlipText className="dark:text-neutral-400 text-neutral-800 tracking-tight mt-2">
+        <span className="dark:text-neutral-400 text-neutral-800 mt-2">
           with the most popular and modern technologies
-        </FlipText>
+        </span>
       </div>
       <div className="w-full overflow-hidden">
         <div className="relative flex flex-col items-center justify-center">
