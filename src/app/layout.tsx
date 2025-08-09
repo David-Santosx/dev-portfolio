@@ -3,6 +3,7 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 export const metadata: Metadata = {
   title: "David Santos - Front-end Developer",
@@ -28,8 +29,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
   return (
     <html lang="en" className={raleway.variable} suppressHydrationWarning>
       <body className={`${raleway.className} antialiased`}>
@@ -40,6 +39,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar className="top-2" />
+          <ScrollProgress />
           {children}
         </ThemeProvider>
       </body>
