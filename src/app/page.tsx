@@ -9,6 +9,14 @@ import { Marquee } from "@/components/ui/marquee";
 import { Badge } from "@/components/ui/badge";
 import { Press_Start_2P } from "next/font/google";
 import { Separator } from "@/components/ui/separator";
+import {
+  CodeIcon,
+  EllipsisIcon,
+  GoalIcon,
+  LaughIcon,
+  UserIcon,
+} from "lucide-react";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 
 const decorationFont = Press_Start_2P({ subsets: ["latin"], weight: "400" });
 
@@ -212,7 +220,7 @@ export function TechsCarousel() {
   ];
 
   return (
-    <div className="flex flex-col w-full mt-15 gap-8">
+    <section className="flex flex-col w-full mt-15 gap-8">
       <div className="text-center flex flex-col items-center">
         {/* <span className="dark:text-neutral-400 text-neutral-800 tracking-normal">
           3 years of
@@ -248,7 +256,72 @@ export function TechsCarousel() {
           <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-background"></div>
         </div>
       </div>
-    </div>
+    </section>
+  );
+}
+
+function AboutSection() {
+  const about = [
+    {
+      Icon: UserIcon, // Keeping UserIcon for "Who am I?"
+      name: "Who am I?",
+      description:
+        "I am a young, determined, and proactive professional with solid experience in full stack web development, digital communication, and project management. Passionate about technology and innovation, I create creative and efficient solutions that combine technical expertise, strategic vision, and a results-driven mindset.",
+      background: (
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-100 to-orange-50 dark:from-orange-900/30 dark:to-orange-800/10 opacity-30 mix-blend-overlay" />
+      ),
+      className: "lg:col-span-2 row-span-2",
+    },
+    {
+      Icon: CodeIcon,
+      name: "Expertise",
+      description:
+        "Full Stack Web Development, Digital Communication, Cloud Computing (in progress), Project Management, and Strategic Use of Technology for Business Growth.",
+      background: (
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/10 opacity-30" />
+      ),
+      className: "lg:col-span-1 row-span-2",
+    },
+    {
+      Icon: EllipsisIcon,
+      name: "Journey",
+      description:
+        "I started my tech journey about three years ago, focusing on web development. Since then, I've grown from building simple projects to delivering full stack solutions, combining modern UI/UX trends with strong technical skills. Currently, I'm expanding into Cloud Computing and DevOps to create scalable, high-impact solutions.",
+      background: (
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-purple-50 dark:from-purple-900/30 dark:to-purple-800/10 opacity-30" />
+      ),
+      className: "lg:col-span-1 row-span-2",
+    },
+    {
+      Icon: GoalIcon,
+      name: "Vision",
+      description:
+        "To be recognized as an innovative professional and a reference in technology, capable of transforming ideas into impactful solutions that promote sustainable growth and continuous evolution in the digital market.",
+      background: (
+        <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-green-50 dark:from-green-900/30 dark:to-green-800/10 opacity-30" />
+      ),
+      className: "lg:col-span-1 row-span-2",
+    },
+    {
+      Icon: LaughIcon,
+      name: "Values",
+      description:
+        "I value continuous learning, discipline, and a strong focus on results. I am committed to becoming a standout professional in the technology field, always striving for innovation and excellence in everything I do.",
+      background: (
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-pink-50 dark:from-pink-900/30 dark:to-pink-800/10 opacity-30" />
+      ),
+      className: "lg:col-span-1 row-span-2",
+    },
+  ];
+
+  return (
+    <section className="mt-15">
+      <BentoGrid className="lg:grid-cols-3 md:grid-cols-2 grid-cols-1 auto-rows-[12rem] gap-4">
+        {about.map((about) => (
+          <BentoCard key={about.name} {...about} />
+        ))}
+      </BentoGrid>
+    </section>
   );
 }
 
@@ -270,6 +343,8 @@ export default function Page() {
       <HeroSection />
       <Separator className="my-8" />
       <TechsCarousel />
+      <Separator className="my-8" />
+      <AboutSection />
       <WordsOfInspiration />
     </div>
   );
