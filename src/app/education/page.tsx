@@ -177,7 +177,7 @@ function LanguagesSection() {
 }
 
 function CurrentlyStudyingSection() {
-  const studying = ["C#", "Angular", "German"];
+  const studying = ["C#", "Angular", "Python", "German"];
 
   return (
     <div className="text-center">
