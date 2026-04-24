@@ -19,14 +19,12 @@ export function Navbar({ className }: { className?: string }) {
             className={cn("fixed top-4 md:top-10 inset-x-0 max-w-2xl mx-auto z-50 px-4", className)}
         >
             <nav className="bg-white dark:bg-neutral-900 backdrop-blur-sm rounded-sm p-4 flex items-center justify-between md:justify-center shadow-sm relative">
-                {/* Logo - Always visible */}
                 <Link href="/">
                     <Button variant="ghost" data-active={pathname === "/"} className="dark:text-orange-300 text-orange-400 data-[active=true]:font-bold">
                         david.santos
                     </Button>
                 </Link>
 
-                {/* Mobile menu button */}
                 <div className="flex items-center gap-2 md:hidden">
                     <Button
                         variant="ghost"
@@ -46,7 +44,6 @@ export function Navbar({ className }: { className?: string }) {
                     </Button>
                 </div>
 
-                {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-6">
                     <div className="flex items-center gap-4">
                         <Link href="/education">
@@ -95,7 +92,6 @@ export function Navbar({ className }: { className?: string }) {
                     </div>
                 </div>
 
-                {/* Mobile Navigation Menu */}
                 {isMenuOpen && (
                     <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-white dark:bg-neutral-900 rounded-sm shadow-lg md:hidden flex flex-col gap-4">
                         <div className="flex flex-col gap-2">
@@ -124,11 +120,6 @@ export function Navbar({ className }: { className?: string }) {
                             <Link target="_blank" href="https://instagram.com/leao.willians">
                                 <Button size={"icon"} variant="ghost">
                                     <InstagramIcon className="w-5 h-5 text-orange-400 dark:text-orange-300" />
-                                </Button>
-                            </Link>
-                            <Link target="_blank" href="https://www.youtube.com/@falando-de-codigo">
-                                <Button size={"icon"} variant="ghost">
-                                    <YoutubeIcon className="w-5 h-5 text-orange-400 dark:text-orange-300" />
                                 </Button>
                             </Link>
                         </div>

@@ -263,7 +263,7 @@ export function TechsCarousel() {
 function AboutSection() {
   const about = [
     {
-      Icon: UserIcon, // Keeping UserIcon for "Who am I?"
+      Icon: UserIcon,
       name: "Who am I?",
       description:
         "I am a young, determined, and proactive professional with solid experience in full stack web development, digital communication, and project management. Passionate about technology and innovation, I create creative and efficient solutions that combine technical expertise, strategic vision, and a results-driven mindset.",

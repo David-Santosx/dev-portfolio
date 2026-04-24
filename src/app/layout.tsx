@@ -1,6 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
-import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={`${raleway.className} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

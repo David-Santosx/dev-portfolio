@@ -129,12 +129,10 @@ function LanguagesSection() {
         className="relative overflow-visible"
       >
         <div className="relative min-h-[400px] flex flex-col items-center justify-between p-8">
-          {/* Globe Background */}
           <div className="absolute inset-0 w-full overflow-hidden">
             <Globe className="opacity-40 top-10" />
           </div>
 
-          {/* Content */}
           <div className="relative z-10 text-center space-y-6 mt-4">
             <h2 className="text-5xl font-bold flex items-center justify-center gap-2">
               <Languages className="h-8 w-8" /> Languages
