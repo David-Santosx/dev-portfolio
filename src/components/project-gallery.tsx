@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { BrowserFrame } from "./browser-frame";
 
@@ -23,14 +24,24 @@ export function ProjectGallery({
   return (
     <div className="space-y-3">
       <BrowserFrame label={`${name} · ${current.label}`}>
-        <Image
-          key={current.src}
-          src={current.src}
-          alt={`${name}: ${current.label}`}
-          fill
-          className="object-cover object-top"
-          sizes="(max-width: 768px) 100vw, 60vw"
-        />
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={current.src}
+            className="absolute inset-0"
+            initial={{ opacity: 0, scale: 1.015 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <Image
+              src={current.src}
+              alt={`${name}: ${current.label}`}
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 60vw"
+            />
+          </motion.div>
+        </AnimatePresence>
       </BrowserFrame>
       {screenshots.length > 1 && (
         <div className="grid grid-cols-4 gap-2 sm:gap-3">
@@ -45,7 +56,7 @@ export function ProjectGallery({
             >
               <span
                 className={cn(
-                  "relative block aspect-video overflow-hidden rounded-md border bg-white transition",
+                  "relative block aspect-video overflow-hidden rounded-md border bg-white transition duration-300",
                   index === active
                     ? "border-orange-400 ring-1 ring-orange-400"
                     : "border-white/10 opacity-60 group-hover:opacity-100"

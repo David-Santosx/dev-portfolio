@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata, ResolvingMetadata } from "next";
 import { pageMetadata } from "@/lib/site";
 import { ProjectGallery } from "@/components/project-gallery";
+import { Reveal } from "@/components/reveal";
 
 type ProjectStatus = "completed" | "in-progress" | "planned";
 
@@ -46,6 +47,12 @@ const projects: Project[] = [
     previewUrl: "https://willians.dev.br/",
     repositoryUrl: "https://github.com/David-Santosx/dev-portfolio",
   },
+  {
+    slug: "expertData",
+    status: "completed",
+    techs: ["Next.js", "TypeScript", "Tailwind CSS", "Mantine", "Hono", "PostgreSQL", "Drizzle ORM"],
+    screens: [{ key: "monitoring", src: "/images/expertdata/1.png" }],
+  },
 ];
 
 const statusOrder: Record<ProjectStatus, number> = {
@@ -72,7 +79,7 @@ function ProjectEntry({ project }: { project: Project }) {
   const repoIsReal = hasRealUrl(project.repositoryUrl);
 
   return (
-    <article className="grid md:grid-cols-[1fr_1.4fr] gap-6 md:gap-16 py-10 md:py-14">
+    <Reveal as="article" className="grid md:grid-cols-[1fr_1.4fr] gap-6 md:gap-16 py-10 md:py-14">
       <div className="space-y-3">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">{name}</h2>
         <p className="text-sm text-muted-foreground">
@@ -116,7 +123,7 @@ function ProjectEntry({ project }: { project: Project }) {
           )}
         </div>
       </div>
-    </article>
+    </Reveal>
   );
 }
 

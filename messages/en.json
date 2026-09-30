@@ -153,6 +153,13 @@
       "devPortfolio": {
         "name": "This portfolio",
         "description": "The site you're looking at. In Portuguese and English, and built to load fast on a phone."
+      },
+      "expertData": {
+        "name": "ExpertData",
+        "description": "Data integration platform for the public sector. It registers agencies, APIs and endpoints, runs collection in batches, cleans and deduplicates records, and shows the health of every run on one dashboard: what's running, what failed and where to look.",
+        "screens": {
+          "monitoring": "Monitoring"
+        }
       }
     },
     "builtWith": "Built with"

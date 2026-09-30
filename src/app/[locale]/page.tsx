@@ -10,6 +10,7 @@ import Image from "next/image";
 import { CONTACT_EMAIL, contactLinks } from "@/lib/contact";
 import { SectionHeading } from "@/components/section-heading";
 import { BrowserFrame } from "@/components/browser-frame";
+import { Reveal, RevealGroup, RevealItem } from "@/components/reveal";
 import { useLocale, useTranslations } from "next-intl";
 import { SITE_NAME, SITE_URL, localizedPath } from "@/lib/site";
 import {
@@ -193,11 +194,11 @@ function ProcessSection() {
   const t = useTranslations("Home.process");
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+    <Reveal as="section" className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
       <SectionHeading title={t("title")} intro={t("intro")} />
-      <ol className="divide-y divide-border border-y border-border">
+      <RevealGroup as="ol" className="divide-y divide-border border-y border-border">
         {processSteps.map((step, index) => (
-          <li key={step} className="grid grid-cols-[2rem_1fr] gap-4 py-7">
+          <RevealItem as="li" key={step} className="grid grid-cols-[2rem_1fr] gap-4 py-7">
             <span className="text-sm font-semibold tabular-nums text-orange-400 pt-1">
               {index + 1}.
             </span>
@@ -207,10 +208,10 @@ function ProcessSection() {
                 {t(`steps.${step}.description`)}
               </p>
             </div>
-          </li>
+          </RevealItem>
         ))}
-      </ol>
-    </section>
+      </RevealGroup>
+    </Reveal>
   );
 }
 
@@ -219,7 +220,7 @@ function FeaturedProject() {
   const tp = useTranslations("Projects");
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+    <Reveal as="section" className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
       <SectionHeading title={t("title")} intro={t("intro")} />
       <div className="space-y-5">
         <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
@@ -252,7 +253,7 @@ function FeaturedProject() {
           <ArrowUpRightIcon className="h-4 w-4" />
         </Link>
       </div>
-    </section>
+    </Reveal>
   );
 }
 
@@ -260,11 +261,11 @@ function StackSection() {
   const t = useTranslations("Home.stack");
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+    <Reveal as="section" className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
       <SectionHeading title={t("title")} intro={t("intro")} />
-      <dl className="space-y-7">
+      <RevealGroup as="dl" className="space-y-7">
         {stackGroups.map(({ key, items }) => (
-          <div key={key} className="space-y-3">
+          <RevealItem key={key} className="space-y-3">
             <dt className="text-sm font-medium text-muted-foreground">
               {t(`groups.${key}`)}
             </dt>
@@ -289,10 +290,10 @@ function StackSection() {
                 </span>
               ))}
             </dd>
-          </div>
+          </RevealItem>
         ))}
-      </dl>
-    </section>
+      </RevealGroup>
+    </Reveal>
   );
 }
 
@@ -311,7 +312,7 @@ function AboutSection() {
           className="object-cover object-left opacity-25"
         />
       </div>
-      <div className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+      <Reveal className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
         <SectionHeading title={t("title")} />
         <div className="space-y-5 text-lg leading-relaxed max-w-prose text-pretty">
           {paragraphs.map((paragraph, index) => (
@@ -320,7 +321,7 @@ function AboutSection() {
             </p>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
@@ -329,19 +330,19 @@ function SoftSkillsSection() {
   const t = useTranslations("Home.softSkills");
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+    <Reveal as="section" className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
       <SectionHeading title={t("title")} intro={t("intro")} />
-      <dl className="divide-y divide-border border-y border-border">
+      <RevealGroup as="dl" className="divide-y divide-border border-y border-border">
         {softSkills.map((skill) => (
-          <div key={skill} className="py-6 space-y-2">
+          <RevealItem key={skill} className="py-6 space-y-2">
             <dt className="text-lg font-semibold">{t(`items.${skill}.title`)}</dt>
             <dd className="text-muted-foreground leading-relaxed max-w-prose text-pretty">
               {t(`items.${skill}.description`)}
             </dd>
-          </div>
+          </RevealItem>
         ))}
-      </dl>
-    </section>
+      </RevealGroup>
+    </Reveal>
   );
 }
 

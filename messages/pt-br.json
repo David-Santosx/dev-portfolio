@@ -153,6 +153,13 @@
       "devPortfolio": {
         "name": "Este portfólio",
         "description": "O site que você está vendo. Em português e inglês, e pensado para abrir rápido no celular."
+      },
+      "expertData": {
+        "name": "ExpertData",
+        "description": "Plataforma de integração de dados para o setor público. Cadastra órgãos, APIs e endpoints, roda as coletas em lotes, trata e deduplica os registros e mostra num painel a saúde de cada execução: o que está rodando, o que falhou e onde investigar.",
+        "screens": {
+          "monitoring": "Monitoramento"
+        }
       }
     },
     "builtWith": "Feito com"

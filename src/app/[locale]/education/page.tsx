@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import type { Metadata, ResolvingMetadata } from "next";
 import { pageMetadata } from "@/lib/site";
+import { Reveal, RevealGroup, RevealItem } from "@/components/reveal";
 
 interface Education {
   slug: string;
@@ -46,13 +47,13 @@ function EducationSection() {
   const t = useTranslations("Education");
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+    <Reveal as="section" className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
       <SectionHeading title={t("degreesTitle")} />
-      <ol className="divide-y divide-border border-y border-border">
+      <RevealGroup as="ol" className="divide-y divide-border border-y border-border">
         {educationData.map((education) => {
           const item = `items.${education.slug}`;
           return (
-            <li key={education.slug} className="py-7 space-y-3">
+            <RevealItem as="li" key={education.slug} className="py-7 space-y-3">
               <div className="space-y-1">
                 <h3 className="text-xl font-semibold text-balance">
                   {t(`${item}.degree`)}
@@ -78,11 +79,11 @@ function EducationSection() {
                   <ArrowUpRightIcon className="h-4 w-4" />
                 </a>
               )}
-            </li>
+            </RevealItem>
           );
         })}
-      </ol>
-    </section>
+      </RevealGroup>
+    </Reveal>
   );
 }
 
@@ -90,17 +91,17 @@ function LanguagesSection() {
   const t = useTranslations("Education.languages");
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+    <Reveal as="section" className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
       <SectionHeading title={t("title")} />
-      <dl className="divide-y divide-border border-y border-border">
+      <RevealGroup as="dl" className="divide-y divide-border border-y border-border">
         {languageKeys.map(({ name, level }) => (
-          <div key={name} className="flex items-baseline justify-between gap-6 py-5">
+          <RevealItem key={name} className="flex items-baseline justify-between gap-6 py-5">
             <dt className="text-lg font-semibold">{t(name)}</dt>
             <dd className="text-muted-foreground text-right">{t(level)}</dd>
-          </div>
+          </RevealItem>
         ))}
-      </dl>
-    </section>
+      </RevealGroup>
+    </Reveal>
   );
 }
 
@@ -114,12 +115,12 @@ function CurrentlyStudyingSection() {
   }).format(studying);
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
+    <Reveal as="section" className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
       <SectionHeading title={t("title")} />
       <p className="text-lg leading-relaxed max-w-prose text-pretty">
         {t("description", { list })}
       </p>
-    </section>
+    </Reveal>
   );
 }
 

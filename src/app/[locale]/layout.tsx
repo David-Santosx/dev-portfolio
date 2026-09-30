@@ -49,6 +49,7 @@ export async function generateMetadata({
       description: t("description"),
     },
     robots: { index: true, follow: true },
+    verification: { google: "MefmxmkL5Kgflqq_uXmxUbtfiuoH0v1ZV7KBQ5cjYHE" },
     other: {
       "geo.region": "BR-MT",
       "geo.placename": "Sorriso",
