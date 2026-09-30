@@ -1,0 +1,199 @@
+{
+  "Metadata": {
+    "title": "David Willians · Desenvolvedor Full Stack em Sorriso – MT",
+    "description": "Desenvolvedor full stack em Sorriso – MT. Crio sites e sistemas web sob medida, do rascunho ao ar, com React, Next.js, Node.js e PostgreSQL.",
+    "keywords": [
+      "desenvolvedor full stack",
+      "desenvolvedor web Sorriso MT",
+      "criação de sites Sorriso",
+      "sistemas web sob medida",
+      "programador Mato Grosso",
+      "desenvolvedor React",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "David Willians"
+    ],
+    "ogImageAlt": "David Willians, desenvolvedor full stack em Sorriso – MT",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "education": {
+      "title": "Educação",
+      "description": "Formação de David Willians, desenvolvedor full stack em Sorriso – MT: Tecnólogo em Análise e Desenvolvimento de Sistemas (UNIC) e certificações em JavaScript."
+    },
+    "projects": {
+      "title": "Projetos",
+      "description": "Projetos de David Willians, desenvolvedor full stack em Sorriso – MT, como o Cadenza, um CRM para clínicas de saúde feito com Next.js, Supabase e PostgreSQL."
+    }
+  },
+  "Nav": {
+    "education": "educação",
+    "projects": "projetos",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "switchLanguage": "Mudar idioma"
+  },
+  "Footer": {
+    "title": "Tem um projeto em mente?",
+    "description": "Me manda uma mensagem, mesmo que ainda seja só uma ideia. A gente conversa e descobre junto o melhor caminho.",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail",
+    "copyright": "© {year} David Willians. Todos os direitos reservados.",
+    "builtWith": "Feito com Next.js e Tailwind CSS.",
+    "location": "Sorriso – MT, Brasil"
+  },
+  "Home": {
+    "hero": {
+      "title": "Do rascunho ao sistema no ar.",
+      "intro": "Sou o David Willians, desenvolvedor full stack há 4 anos. Construo sites e sistemas web sob medida e cuido do projeto inteiro: as telas que seus clientes usam, o servidor e o banco de dados por trás. Você fala com uma pessoa só, do começo ao fim.",
+      "contactMe": "Conversar sobre um projeto",
+      "contactViaWhatsapp": "Pelo WhatsApp",
+      "contactViaEmail": "Por e-mail",
+      "seeProjects": "Ver projetos",
+      "imageAlt": "Foto de David Willians"
+    },
+    "process": {
+      "title": "Como funciona",
+      "intro": "Você sabe em que pé o projeto está em todas as etapas.",
+      "steps": {
+        "brief": {
+          "title": "Você me conta o problema",
+          "description": "Do jeito que explicaria para um amigo, sem precisar de termo técnico. Eu faço as perguntas e te devolvo por escrito o que vai ser feito."
+        },
+        "build": {
+          "title": "Você acompanha a construção",
+          "description": "Nada de esperar até o dia da entrega para ver alguma coisa. O sistema vai tomando forma numa versão de teste online, e mudar a rota cedo sai bem mais barato."
+        },
+        "launch": {
+          "title": "O sistema vai pro ar",
+          "description": "Publico, te mostro como usar e continuo por perto para corrigir o que aparecer e evoluir o que fizer sentido."
+        }
+      }
+    },
+    "featured": {
+      "title": "No que estou trabalhando",
+      "intro": "Um sistema de verdade, para um problema que custa dinheiro todo mês.",
+      "seeAll": "Ver todos os projetos"
+    },
+    "stack": {
+      "title": "Ferramentas",
+      "intro": "Você não precisa entender nada disto. Mas, se tiver alguém técnico no seu time, é com isso que eu trabalho.",
+      "groups": {
+        "frontend": "Interface",
+        "backend": "Servidor",
+        "tools": "Nuvem, infraestrutura e design",
+        "data": "Dados"
+      }
+    },
+    "about": {
+      "title": "Quem está do outro lado",
+      "paragraphs": [
+        "Comecei pelo front-end, montando telas. Com o tempo fui descendo para o servidor e o banco de dados, porque queria entender o sistema inteiro e não só a parte que aparece.",
+        "Hoje isso virou meu jeito de trabalhar: enxergo o projeto de ponta a ponta, da interface e experiência do usuário até APIs, banco de dados, integrações e infraestrutura. Gosto de entender o problema antes de escrever código e de conseguir explicar cada decisão sem enrolação.",
+        "Também gosto de construir meus próprios projetos. Atualmente trabalho em produtos como o Cadenza, um sistema voltado à gestão e automação de clínicas, e o ExpertData, uma plataforma para gerenciamento e monitoramento de fluxos de dados públicos. São projetos que me permitem explorar não só desenvolvimento, mas também produto, arquitetura, dados e automação.",
+        "No dia a dia, tenho trabalhado principalmente com React, Next.js, TypeScript, SQL e bancos relacionais, além de tecnologias de dados e integração. Curso Análise e Desenvolvimento de Sistemas e, nas horas vagas, estou aprendendo sobre engenharia de dados e aprendizado de máquina."
+      ]
+    },
+    "softSkills": {
+      "title": "Além do código",
+      "intro": "O que você pode esperar de mim durante o projeto, além da parte técnica.",
+      "items": {
+        "communication": {
+          "title": "Comunicação direta",
+          "description": "Explico o que estou fazendo e por quê, sem jargão. Se algo muda no caminho, você fica sabendo por mim, e antes de virar problema."
+        },
+        "problemFirst": {
+          "title": "Entender antes de construir",
+          "description": "Faço perguntas até entender o problema de verdade. Às vezes a melhor solução é mais simples do que a que foi pedida, e eu falo isso."
+        },
+        "ownership": {
+          "title": "Responsabilidade de ponta a ponta",
+          "description": "Como cuido do projeto inteiro, não existe \"isso é com outra equipe\". Prazos, decisões e ajustes passam por mim."
+        },
+        "productThinking": {
+          "title": "Visão de produto",
+          "description": "Penso em quem vai usar e no que o negócio precisa, não só no código. Construir o Cadenza e o ExpertData me ensinou a pensar assim."
+        },
+        "learning": {
+          "title": "Aprendizado contínuo",
+          "description": "Estou sempre estudando algo novo e trago isso para os projetos. Hoje o foco é engenharia de dados e machine learning."
+        }
+      }
+    }
+  },
+  "Projects": {
+    "title": "Projetos",
+    "subtitle": "O que já construí e o que está saindo do forno. Cada projeto começa com um problema concreto.",
+    "status": {
+      "completed": "Concluído",
+      "inProgress": "Em andamento",
+      "planned": "Planejado"
+    },
+    "liveDemo": "Abrir o site",
+    "repository": "Ver o código",
+    "comingSoon": "Links em breve",
+    "items": {
+      "cadenza": {
+        "name": "Cadenza",
+        "description": "Clínica perde dinheiro toda vez que um paciente falta ou cancela em cima da hora. O Cadenza é um CRM para clínicas de saúde que organiza pacientes e agenda, mantém uma lista de espera e oferece o horário que ficou livre para quem está nela, antes que ele fique vazio.",
+        "screens": {
+          "overview": "Visão geral",
+          "recovery": "Recuperação",
+          "waitlist": "Lista de espera",
+          "team": "Equipe"
+        }
+      },
+      "delicatta": {
+        "name": "Delicatta",
+        "description": "Landing page da Delicatta, confeitaria que monta cestas e faz doces artesanais. A página mostra os produtos numa galeria de fotos e leva quem visita direto para a encomenda pelo WhatsApp.",
+        "screens": {
+          "hero": "Início",
+          "products": "Produtos"
+        }
+      },
+      "devPortfolio": {
+        "name": "Este portfólio",
+        "description": "O site que você está vendo. Em português e inglês, e pensado para abrir rápido no celular."
+      }
+    },
+    "builtWith": "Feito com"
+  },
+  "Education": {
+    "title": "Educação",
+    "subtitle": "Onde estudei e o que continuo estudando.",
+    "viewCertificate": "Ver certificado",
+    "items": {
+      "technologist": {
+        "degree": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+        "description": "Curso com foco em desenvolvimento web, algoritmos e engenharia de software. No caminho, participei de competições de programação e hackathons."
+      },
+      "jsDeveloper": {
+        "degree": "Desenvolvedor JavaScript",
+        "description": "Formação prática em JavaScript, construindo aplicações web do zero."
+      },
+      "jsExpert": {
+        "degree": "JavaScript",
+        "description": "Curso online de JavaScript com exercícios práticos em cada módulo e certificado ao final."
+      }
+    },
+    "languages": {
+      "title": "Idiomas",
+      "english": "Inglês",
+      "portuguese": "Português",
+      "levelBasic": "Básico-Intermediário",
+      "levelNative": "Nativo"
+    },
+    "continuousLearning": {
+      "title": "Estudando agora",
+      "description": "No momento estou me aprofundando em {list}.",
+      "items": [
+        "C#",
+        "Angular",
+        "machine learning",
+        "engenharia de dados"
+      ]
+    },
+    "degreesTitle": "Formação",
+    "expected": "em andamento, conclusão prevista para {year}",
+    "completedIn": "concluído em {year}"
+  }
+}
