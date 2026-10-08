@@ -44,6 +44,7 @@ const projects: Project[] = [
     slug: "infiniteTermo",
     status: "completed",
     techs: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Zod", "Vitest"],
+    previewUrl: "https://infinite-termo.vercel.app/",
     repositoryUrl: "https://github.com/David-Santosx/infinite-termo",
     screens: [
       { key: "campaign", src: "/images/infinite-termo/1.png" },
