@@ -160,6 +160,16 @@
         "screens": {
           "monitoring": "Monitoramento"
         }
+      },
+      "infiniteTermo": {
+        "name": "Infinite Termo",
+        "description": "O Termo, só que sem o limite de uma palavra por dia. Tem os modos Termo, Dueto e Quarteto e uma campanha que encadeia os três. Quem decide o resultado é o servidor: a partida fica num cookie criptografado, então a resposta não aparece no navegador e não precisa de banco de dados.",
+        "screens": {
+          "campaign": "Campanha",
+          "quarteto": "Quarteto",
+          "result": "Resultado",
+          "help": "Como jogar"
+        }
       }
     },
     "builtWith": "Feito com"

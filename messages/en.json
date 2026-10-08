@@ -160,6 +160,16 @@
         "screens": {
           "monitoring": "Monitoring"
         }
+      },
+      "infiniteTermo": {
+        "name": "Infinite Termo",
+        "description": "Termo, the Portuguese Wordle, without the one-word-a-day limit. It has the Termo, Dueto and Quarteto modes plus a campaign that chains all three. The server decides every result: the game lives in an encrypted cookie, so the answer never reaches the browser and there's no database.",
+        "screens": {
+          "campaign": "Campaign",
+          "quarteto": "Quarteto",
+          "result": "Result",
+          "help": "How to play"
+        }
       }
     },
     "builtWith": "Built with"

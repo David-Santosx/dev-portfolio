@@ -41,6 +41,18 @@ const projects: Project[] = [
     previewUrl: "https://delicatta-doces-case.vercel.app/",
   },
   {
+    slug: "infiniteTermo",
+    status: "completed",
+    techs: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Zod", "Vitest"],
+    repositoryUrl: "https://github.com/David-Santosx/infinite-termo",
+    screens: [
+      { key: "campaign", src: "/images/infinite-termo/1.png" },
+      { key: "quarteto", src: "/images/infinite-termo/2.png" },
+      { key: "result", src: "/images/infinite-termo/3.png" },
+      { key: "help", src: "/images/infinite-termo/4.png" },
+    ],
+  },
+  {
     slug: "devPortfolio",
     status: "in-progress",
     techs: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "next-intl"],
