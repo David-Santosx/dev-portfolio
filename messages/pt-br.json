@@ -170,6 +170,16 @@
           "result": "Resultado",
           "help": "Como jogar"
         }
+      },
+      "reportHub": {
+        "name": "Report Hub",
+        "description": "Gerador de relatórios em PDF e CSV a partir de templates. O template é montado num editor visual com prévia ao vivo e publicado; depois, uma chamada à API com os dados em JSON devolve o relatório pronto. Aguenta relatórios com milhares de linhas, como balancetes e demonstrativos da LRF, via jobs assíncronos, e cada PDF sai com QR Code que leva a uma página pública de verificação. Tem API keys, cotas por plano, métricas e alertas por e-mail.",
+        "screens": {
+          "editor": "Editor de templates",
+          "pdfs": "PDFs gerados",
+          "metrics": "Métricas e alertas",
+          "verify": "Verificação do documento"
+        }
       }
     },
     "builtWith": "Feito com"

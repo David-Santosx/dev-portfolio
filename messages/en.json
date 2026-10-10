@@ -170,6 +170,16 @@
           "result": "Result",
           "help": "How to play"
         }
+      },
+      "reportHub": {
+        "name": "Report Hub",
+        "description": "PDF and CSV report generator built on templates. You design a template in a visual editor with live preview and publish it; then an API call with JSON data returns the finished report. It handles reports with thousands of rows, like trial balances and Brazilian fiscal-responsibility statements, through async jobs, and every PDF carries a QR code that opens a public verification page. Includes API keys, plan quotas, metrics and email alerts.",
+        "screens": {
+          "editor": "Template editor",
+          "pdfs": "Generated PDFs",
+          "metrics": "Metrics and alerts",
+          "verify": "Document verification"
+        }
       }
     },
     "builtWith": "Built with"

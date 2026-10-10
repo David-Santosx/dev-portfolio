@@ -54,6 +54,17 @@ const projects: Project[] = [
     ],
   },
   {
+    slug: "reportHub",
+    status: "completed",
+    techs: ["Next.js", "React", "TypeScript", "Express", "Playwright", "PostgreSQL", "Drizzle ORM", "Redis", "Docker"],
+    screens: [
+      { key: "editor", src: "/images/report-hub/1.png" },
+      { key: "pdfs", src: "/images/report-hub/2.png" },
+      { key: "metrics", src: "/images/report-hub/3.png" },
+      { key: "verify", src: "/images/report-hub/4.png" },
+    ],
+  },
+  {
     slug: "devPortfolio",
     status: "in-progress",
     techs: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "next-intl"],
